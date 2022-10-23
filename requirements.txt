@@ -1,1 +1,2 @@
 pyshorteners
+streamlit-on-Hover-tabs

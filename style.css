@@ -1,0 +1,141 @@
+section[data-testid='stSidebar'] > div:nth-of-type(1) {
+    background-color: #111;
+}
+
+button[kind="header"] {
+    background-color: transparent;
+    color:rgb(180, 167, 141)
+}
+
+video.stVideo {
+    width: 300px  !important;
+    height: 300px !important;
+    background-color: black !important;
+}
+
+.css-hxt7ib {
+    padding-top: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.css-183lzff {
+    white-space: pre-line;
+}
+
+.css-k1vhr4 {
+    display: inline-block !important;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1vencpc {
+    position: relative;
+    top: 2px;
+    background-color: transparent !important;
+    z-index: 999991;
+    min-width: 244px;
+    max-width: 550px;
+    transform: none;
+    transition: transform 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
+}
+
+audio#audio {
+    width: 300px !important;
+}
+
+.css-163ttbj {
+    position: relative;
+    top: 2px;
+    background-color: transparent !important;
+    z-index: 999991;
+    min-width: 244px;
+    max-width: 550px;
+    transform: none;
+    transition: transform 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
+}
+
+.css-e370rw {
+    position: relative !important;
+    display: inline-block !important;
+    z-index: 101;
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: opacity 300ms ease 150ms, transform 300ms ease 150ms;
+    border: none;
+    color: rgba(49, 51, 63, 0.6);
+    border-radius: 50%;
+    right: -18rem !important;
+    top: 1rem !important;
+    opacity: 0;
+    transform: scale(0);
+    background-color: transparent !important;
+}
+
+
+#root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 2.5rem;}
+
+
+.css-ab6luk {
+    position: revert !important;
+    display: inline-flex !important;
+    z-index: auto;
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: opacity 300ms ease 150ms, transform 300ms ease 150ms;
+    border: none;
+    color: rgb(145 145 145 / 72%);
+    border-radius: 50%;
+    right: -54% !important;
+    top: -42% !important;
+    background-color: transparent !important;
+}
+
+@media(hover){
+    /* header element to be removed */
+    header[data-testid="stHeader"] {
+        display:none;
+    }
+
+    /* The navigation menu specs and size */
+    section[data-testid='stSidebar'] > div {
+        height: 100%;
+        width: 10px;
+        position: relative;
+        z-index: 0;
+        top: 0px;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s ease;
+        padding-top: 10px;
+        white-space: nowrap;
+    }
+
+    /* The navigation menu open and close on hover and size */
+    /* section[data-testid='stSidebar'] > div {
+    height: 100%;
+    width: 75px; /* Put some width to hover on. */
+    /* } 
+
+    /* ON HOVER */
+    section[data-testid='stSidebar'] > div:hover{
+    width: 200px;
+    }
+
+    /* The button on the streamlit navigation menu - hidden */
+    button[kind="header"] {
+        display: none;
+    }
+}
+     
+@media(max-width: 200px){
+    
+    section[data-testid='stSidebar'] > div {
+        width:15rem;
+    }
+}
+ 

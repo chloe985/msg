@@ -53,7 +53,7 @@ col1, col2= st.columns(2,gap="medium")
 
 with col1:
     option = st.sidebar.selectbox('选择成员',
-                                  ('山下美月', '久保史绪里', '松尾美佑', '乃木坂46'))
+                                  ('山下美月', '久保史绪里', '松尾美佑', '早川聖来', '乃木坂46'))
     yesterday_ = datetime.datetime.now() + datetime.timedelta(days = -7)
     datebox = st.sidebar.date_input('选择MSG查询日期(手机端推荐手动输入)',yesterday_)
     checkbox = st.sidebar.checkbox('正序',value=False)
@@ -271,6 +271,10 @@ if option == '山下美月':
 if option == '松尾美佑':
     member_id = 42
     msg()
+if option == '早川聖来':
+    member_id = 40
+    msg()
+    
 
 if option == '乃木坂46':
     member_id = 45

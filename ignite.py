@@ -16,8 +16,8 @@ headers2={
     'Accept-Language': 'zh-Hans-JP;q=1.0, ja-JP;q=0.9, en-JP;q=0.8',
     'Connection': 'keep-alive',
     'Host': 'api.n46.glastonr.net',
-    'User-Agent': 'Hot/1.4.00 (jp.co.sonymusic.communication.nogizaka; build:136; iOS 15.5.0) Alamofire/5.6.2',
-    'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+    'x-talk-app-id': 'jp.co.sonymusic.communication.nogizaka 2.3',
+    'user-agent': 'Hot/1.8.01 (jp.co.sonymusic.communication.nogizaka; build:169; iOS 16.3.1) Alamofire/5.6.2',
 }
 
 r_token={
@@ -39,8 +39,8 @@ headers={
     'Authorization': f'Bearer {access_token}',
     'Connection': 'keep-alive',
     'Host': 'api.n46.glastonr.net',
-    'User-Agent': 'Hot/1.4.00 (jp.co.sonymusic.communication.nogizaka; build:136; iOS 15.5.0) Alamofire/5.6.2',
-    'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+    'x-talk-app-id': 'jp.co.sonymusic.communication.nogizaka 2.3',
+    'user-agent': 'Hot/1.8.01 (jp.co.sonymusic.communication.nogizaka; build:169; iOS 16.3.1) Alamofire/5.6.2',
 }
 
 st.set_page_config(page_title="Ignite")
@@ -202,7 +202,8 @@ with col2:
             # 类型
             r_type = r[i]['type']
             if r[i]["state"] == "canceled":
-                break
+                i += 1
+                continue
             # 语音
             if r_type == 'voice':
                 st.caption(f'{group(member_ids)} {tttt}')
